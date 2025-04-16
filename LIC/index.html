@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIC Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="images/LIC.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="lic-main">
+        <div class="lic-heading">
+            <h1>LIC Premimum Calculator</h1>
+        </div>
+        <div class="lic-calculate">
+            <form action="" onsubmit="calculate(event)" >
+                <table class="table-1">
+                    <tr>
+                        <td><span>Sum Ensured:</span></td>
+                        <td><input type="number" autofocus placeholder="₹ Enter Sum Ensured" id="sum-ensured"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Policy Term(In Year):</span></td>
+                        <td><input type="number" placeholder="Enter Policy Term" id="policy-term"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Bouns Rate (Per ₹1000 Sum Assured):</span></td>
+                        <td><input type="number" placeholder="₹ Enter Bouns Rate" id="bouns-rate"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Premium Amount:</span></td>
+                        <td><input type="number" placeholder="₹ Enter Premium Amount" id="premium-amount"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Payment Mode:</span></td>
+                        <td>
+                            <select name="" id="Payment-mode">
+                                <option value="Payment Mode" hidden>Payment Mode</option>
+                                <option value="Monthly">Monthly</option>
+                                <option value="Half-Year">Half-Year</option>
+                                <option value="Yearly">Yearly</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="btn-calc"><button class="button-30" role="button"
+                                type="submit">Calculate</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="lic-output">
+        <table class="table-2" border="1" >
+            <tr>
+                <td><span>Year</span></td>
+                <td><span>Premium Paid</span></td>
+                <td><span>Bouns Earn</span></td>
+                <td><span>Premimum Amount</span></td>
+            </tr>
+            <tbody id="InnerLoop"></tbody>
+        </table>
+        <table border="1" class="table-3">
+            <tr>        
+                <td><span>Total:</span></td>
+                <td><span id="Premimum-paid"></span></td>
+                <td><span id="total-bouns"></span></td>
+                <td><span id="premium-total-amount"></span></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><span id="Premium-time">Premium:</span></td>
+                <td colspan="2"><span id="premium-amount-output"></span></td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"><span>Maturity Amount:</span></td>
+                <td colspan="2"><span id="Maturity-amount"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>
