@@ -19,7 +19,7 @@ A simple LIC (Life Insurance Corporation) Premium Calculator web app that allows
 
 ## 🖼️ Demo
 
-![Demo](images/LIC-UI-IMAGE.png)
+![Demo](LIC/images/LIC-UI-IMAGE.png)
 
 
 ## 📁 File Structure
